@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7: Giải phương trình bậc 2.</title>
+</head>
+<body>
+
+    /* ax^2+bx+c=0 (a≠0)
+Tính Δ=b2-4ac
+Δ < 0 => phương trình (1) vô nghiệm
+Δ = 0 => phương trình (1) có nghiệm kép x_{1} =x_{2} = - \frac{b}{2a}
+Δ > 0 => phương trình (1) có 2 nghiệm phân biệt, ta dùng công thức nghiệm sau */
+<script>
+    let d = prompt("cùng giải phương trình bật 2 nhé, bấm enter để tiếp tục");
+    let a = prompt("nhập giá trị a");
+    let b = prompt("nhập giá trị b");
+    let c = prompt("nhập giá trị c");
+    let x
+    let i = (b * b-(4 * a *c) );
+
+if (i<0) {
+    alert ("phương trình vô nghiệm");
+} else if (i == 0) {
+    alert("Phương trình có nghiệp kép" + "x =" + -b % (2 * a));
+} else {
+    alert ("phương trình có 2 nghiệm phân biệt");
+
+
+}
+
+</script>
+
+</body>
+</html>

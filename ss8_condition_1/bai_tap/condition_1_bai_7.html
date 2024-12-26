@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</title>
+</head>
+<body>
+<p>
+    Phí thuê bao bắt buộc là 25 nghìn.</br>
+
+    600 đồng cho mỗi gọi của 50 phút đầu tiên.</br>
+
+    400 đồng cho mỗi phút gọi của 150 phút tiếp theo.</br>
+
+    200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên</br>
+</p>
+<script>
+    let x = prompt("số phút gọi trong 1 tháng là");
+    if (x < 50) {
+        console.log(600 * x);
+    } else if (50 < x < 200) {
+        console.log(400 * x);
+    } else {
+        console.log(200 * x);
+    }
+
+</script>
+
+</body>
+</html>

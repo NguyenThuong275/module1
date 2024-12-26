@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    /*let x = prompt("input your number");
+   /* let x = prompt("input your number");
     if (x > 0) {
         alert("1");
     } else if (x < 0) {
@@ -16,13 +16,17 @@
     }*/
 
     let x = prompt("input your number");
-    switch (x){
-        case "x > 0":
+    let x1 =x>=0;
+    switch (x1){
+        case true:
             alert("1");
-        case "x < 0":
+            break;
+        case false:
             alert("-1");
+            break;
         default:
             alert ("0");
+        break;
     }
 </script>
 </body>

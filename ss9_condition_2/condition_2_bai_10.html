@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10: Viết chương trình tính giá điện</title>
+</head>
+<body>
+<h1> chương trình viết giá điện</h1>
+<script>
+    let x = prompt("số điện tiêu thụ");
+
+    if (x >= 0 && x <= 50 ) { // bâc 1
+        alert( x*1.806);
+    } else if ( x >= 51 && x <=100) { // bật 2
+        alert(x * 1.866);
+    } else if ( x >= 101 && x <= 200 ) { // bat3
+        alert(x * 2.167);
+    } else if (x >= 201 && x <= 300) { // bat 4
+        alert(x * 2.729);
+    } else if (x >= 301 && x <= 400) { //bat 5
+        alert(x * 3.050);
+    } else {
+        alert(x*3.151);
+    }
+
+</script>
+
+
+</body>
+</html>

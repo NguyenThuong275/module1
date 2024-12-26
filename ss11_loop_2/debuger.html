@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  document.write ('bat dau vong lap');
+  // internal
+  let counter = 1;
+  debugger;
+  do {
+    // Template literals ' backtick "",''
+    if (counter === 3) {
+      break;
+    }
+    document.write(`${counter} break<br>`);
+    counter++;
+  } while (counter <= 10);
+  document.write('vong lap ket thuc');
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1: Viết chương trình nhận vào một số từ hộp thoại, việc nhập kết thúc khi người dùng nhập vào giá trị -1.
+        Mỗi giá trị nhập được sẽ được hiển thị ra và thực hiện tính tổng các giá trị đó. </title>
+</head>
+<body>
+
+<script>
+    let total = 0; // Biến lưu tổng các giá trị
+    let input;     // Biến lưu giá trị người dùng nhập vào
+
+    do {
+        input = parseInt(prompt("Nhập một số (nhập -1 để thoát):"), 10); // Nhập giá trị từ hộp thoại
+        if (input !== -1) {
+            console.log("Bạn đã nhập:", input); // Hiển thị giá trị vừa nhập
+            total += input;                    // Cộng giá trị vào tổng
+        }
+    } while (input !== -1); // Kết thúc khi người dùng nhập -1
+
+    console.log("Tổng các giá trị đã nhập là:", total); // Hiển thị tổng các giá trị
+    alert("Tổng các giá trị đã nhập là: " + total)
+    }
+
+</script>
+
+</body>
+</html>
